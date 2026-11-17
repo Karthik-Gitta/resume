@@ -1,0 +1,498 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,700;1,9..144,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+/* Basic Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background-color: #FAF7F2;
+  color: #222831;
+  line-height: 1.7;
+  font-size: 16px;
+}
+
+/* Typography */
+h1, h2, h3, h4 {
+  font-family: 'Fraunces', Georgia, serif;
+  color: #162A45;
+  margin-bottom: 0.6rem;
+  line-height: 1.3;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-top: 1rem;
+}
+
+h3 {
+  font-size: 1.3rem;
+}
+
+p {
+  margin-bottom: 1.2rem;
+  color: #4A5568;
+}
+
+a {
+  color: #1B3B6F;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #C27818;
+}
+
+/* Layout Container */
+.container {
+  width: 90%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.content-narrow {
+  max-width: 720px;
+}
+
+/* Navigation Bar */
+.navbar {
+  background-color: #FAF7F2;
+  border-bottom: 1px solid #E8E2D8;
+  padding: 15px 0;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.nav-brand {
+  font-family: 'Fraunces', serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #162A45;
+}
+
+.nav-brand span {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 0.8rem;
+  color: #718096;
+  font-weight: normal;
+  display: block;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.nav-links a {
+  padding: 6px 12px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #4A5568;
+  border-radius: 4px;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  background-color: #F0EAE1;
+  color: #162A45;
+  font-weight: 600;
+}
+
+.nav-cta {
+  background-color: #1B3B6F !important;
+  color: #FFFFFF !important;
+}
+
+.nav-cta:hover {
+  background-color: #C27818 !important;
+}
+
+/* Badges & Tags */
+.tag {
+  display: inline-block;
+  background-color: #EBF1F8;
+  color: #1B3B6F;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 20px;
+  margin-right: 6px;
+  margin-bottom: 10px;
+}
+
+.tag-gold {
+  background-color: #FDF3E5;
+  color: #C27818;
+}
+
+/* Quote / Epigraph Box */
+.quote-box {
+  background-color: #FFFFFF;
+  border: 1px solid #E5DFD3;
+  border-left: 5px solid #1B3B6F;
+  padding: 22px 25px;
+  border-radius: 6px;
+  margin: 25px 0 35px 0;
+}
+
+.quote-box blockquote {
+  font-family: 'Fraunces', Georgia, serif;
+  font-size: 1.25rem;
+  font-style: italic;
+  color: #162A45;
+  margin-bottom: 8px;
+}
+
+.quote-box blockquote strong {
+  color: #C27818;
+  font-style: normal;
+}
+
+.quote-box p {
+  font-size: 0.9rem;
+  color: #718096;
+  margin-bottom: 0;
+}
+
+/* Hero Section */
+.hero {
+  padding: 20px 0 35px 0;
+}
+
+.hero p.lead {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #333F4E;
+  margin: 15px 0 25px 0;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  text-align: center;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.btn-primary {
+  background-color: #1B3B6F;
+  color: #FFFFFF;
+}
+
+.btn-primary:hover {
+  background-color: #C27818;
+  color: #FFFFFF;
+}
+
+.btn-outline {
+  background-color: #FFFFFF;
+  border: 1px solid #D5CFC5;
+  color: #162A45;
+}
+
+.btn-outline:hover {
+  background-color: #F0EAE1;
+}
+
+/* Cards & Grid Layouts */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin: 20px 0 35px 0;
+}
+
+.card {
+  background-color: #FFFFFF;
+  border: 1px solid #E8E2D8;
+  border-radius: 6px;
+  padding: 22px;
+}
+
+.card h3 {
+  margin-bottom: 8px;
+}
+
+.card-title {
+  color: #C27818;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin-bottom: 5px;
+}
+
+/* Chapter Section */
+.chapter {
+  background-color: #FFFFFF;
+  border: 1px solid #E8E2D8;
+  border-radius: 6px;
+  padding: 25px;
+  margin-bottom: 25px;
+}
+
+.chapter-num {
+  color: #C27818;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.callout {
+  background-color: #FAF4EB;
+  border-left: 3px solid #C27818;
+  padding: 15px;
+  margin: 15px 0;
+  border-radius: 0 4px 4px 0;
+}
+
+.callout p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #553C18;
+}
+
+/* Resume Document Styling */
+.resume-box {
+  background-color: #FFFFFF;
+  border: 1px solid #DDD6CB;
+  border-radius: 6px;
+  padding: 35px;
+  margin: 25px 0 40px 0;
+}
+
+.resume-header {
+  border-bottom: 2px solid #162A45;
+  padding-bottom: 15px;
+  margin-bottom: 25px;
+}
+
+.resume-header h1 {
+  font-size: 2.2rem;
+  margin-bottom: 5px;
+}
+
+.resume-subtitle {
+  color: #C27818;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.resume-contact-info {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.resume-contact-info a {
+  color: #1B3B6F;
+  text-decoration: underline;
+}
+
+.resume-section {
+  margin-bottom: 25px;
+}
+
+.resume-section h2 {
+  font-size: 1.15rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-bottom: 1px solid #E8E2D8;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+  color: #162A45;
+}
+
+.resume-item {
+  margin-bottom: 15px;
+}
+
+.resume-item-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.resume-item-top strong {
+  font-size: 1.05rem;
+  color: #162A45;
+}
+
+.resume-date {
+  font-size: 0.85rem;
+  color: #718096;
+}
+
+.resume-item-sub {
+  color: #1B3B6F;
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin-bottom: 5px;
+}
+
+ul.resume-list {
+  padding-left: 20px;
+  color: #4A5568;
+  font-size: 0.95rem;
+}
+
+ul.resume-list li {
+  margin-bottom: 5px;
+}
+
+/* Bookshelf */
+.book-card {
+  background-color: #FFFFFF;
+  border: 1px solid #E8E2D8;
+  border-radius: 6px;
+  padding: 20px;
+}
+
+.book-category {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: #C27818;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.book-card h3 {
+  margin-bottom: 3px;
+}
+
+.book-author {
+  font-size: 0.88rem;
+  color: #718096;
+  font-style: italic;
+  margin-bottom: 12px;
+}
+
+.book-quote {
+  background-color: #FAF7F2;
+  border-left: 3px solid #1B3B6F;
+  padding: 8px 12px;
+  font-size: 0.85rem;
+  font-style: italic;
+  color: #333;
+  margin-top: 10px;
+}
+
+/* Contact Form */
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #162A45;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  font-family: inherit;
+  font-size: 0.95rem;
+  border: 1px solid #D5CFC5;
+  border-radius: 4px;
+  background-color: #FFFFFF;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #1B3B6F;
+}
+
+/* Footer */
+footer {
+  border-top: 1px solid #E8E2D8;
+  background-color: #FFFFFF;
+  padding: 30px 0;
+  margin-top: 40px;
+  color: #718096;
+  font-size: 0.9rem;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.footer-links a {
+  margin-left: 15px;
+  color: #4A5568;
+}
+
+.footer-links a:hover {
+  color: #C27818;
+}
+
+/* Basic Mobile Responsiveness */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+  }
+  
+  .nav-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    gap: 5px;
+  }
+  
+  .resume-box {
+    padding: 20px 15px;
+  }
+  
+  .footer-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .footer-links a {
+    margin-left: 0;
+    margin-right: 15px;
+  }
+}
